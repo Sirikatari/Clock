@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Farm Product Order Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-image: url(image.webp.jpg);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+h1{
+            color:azure;
+        }
+        #detail{
+            font-size: medium;
+            font-weight: bold;
+            margin: 6px;
+        }
+        #name,#number,#message,#email{
+            margin: 15px;
+        }
+.container {
+    width: 50%;
+    margin: 0 auto;
+    /* background-color: #fff; */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+.one{
+                margin-top: 20px;
+            }
+            
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.product {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 15%;
+    padding: 10px;
+    background-color: wheat;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#orderSummary {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+</style>
+<body>
+    <div class="container">
+        <center>
+            <form action="thanks.html">
+                <div class="one">
+                <h1 style="font-family: 'Courier New', Courier, monospace; color:black;">Order Conformation</h1><br>
+                <div id="name"><span id="detail">Full Name:</span><input type="text" placeholder="full name"  autofocus><br></div>
+                    <div id="number"><span id="detail">Phone Number:</span><input type="text" placeholder="phone number"><br></div>
+                    <div id="email"><span id="detail">Email:</span><input type="text" placeholder="email"><br></div>
+                    <div id="Message"><span id="detail"> Message:<br></span></div>
+                <textarea name="text" id="" rows="6" cols="20"></textarea><br>
+                <!-- <input type="button" value="send" style="margin: 8px; width: 80px; height: 28px;"> -->
+                <button><a href="thanks.html" style="margin: 8px; width: 80px; height: 28px;">send</a></button>
+            </div>
+        </form>
+        </center>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <title>Registration page</title>
+            <style>
+                .one{
+                    margin: 10px;
+                }
+                .one1{
+                    margin: 10px;
+                }
+                span{
+                    font-weight: bold;
+                    margin: 8px;
+                }
+                .space{
+                    margin: 8px;
+                }
+                body{
+                background: url(milk.jpeg);
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+            .mar{
+                margin: 80px;
+            }
+            #two {
+            
+                background-color:cornflowerblue;
+                padding: 10px;
+                margin: 20px;
+            }
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+            nav ul li a {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight: bold;
+                color: black ;
+                text-decoration: none;
+                margin-left: 10px;
+            }
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+            #foot{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    @media screen and (min-width: 767px)  {
+                .container {
+                    width: 100%;
+                    padding: 5px 10px;
+                }
+                #two {
+            
+            background-color: palevioletred;
+            padding: 10px;
+            margin: 20px;
+        }
+        #foot{
+            width: 100%;
+            background-color:palevioletred;
+        }
+                        }
+
+            /* tablets , iPads (portait and landscape )----------  */
+             
+         @media screen and (min-width: 768px) and (max-width: 1024px)  {
+               
+            .container {
+                    width: 750px;
+                    padding: 5px 10px;
+                }
+                #two {
+            
+            background-color: green;
+            padding: 10px;
+            margin: 20px;
+        }
+        #foot{
+            width: 100%;
+            background-color: green;
+        }
+            }
+
+
+          /* Low resolution Desktops and laptops ----------  */
+             
+          @media screen and (min-width: 1024px)  {
+            .container {
+                    width: 980px;
+                    padding: 5px 15px;
+                }
+            }
+      
+          /* High  resolution Desktops and laptops ----------  */
+             
+          @media screen and (min-width: 1280px)  {
+            .container {
+                    width: 1200px;
+                    padding: 5px 20px;
+                }
+            }
+            </style>
+       </head>
+        <body>
+            <nav id="two">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+            
+                    <li><a href="login.html">Login</a></li>
+    
+                </ul>
+            </nav>
+            <div class=" mar">
+    
+            <center><h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">SHREE KRISHNA DAIRY FARM</h1>
+            <form action="login.html">
+                <div class="space"><span id="one3"> User Name: <input type="text" name="uname" placeholder="User Name" autofocus><br></span></div>
+                
+                <span id="one3"> Password: <input type="text" name="pass" placeholder="Password"><br></span>
+                <div class="space"><span id="one3"> First Name: <input type="text" name="uname" placeholder="First Name"><br></span></div>
+                
+                <span style="font-weight: bold; margin: 5px;">Mobile no:</span><input type="tel"  name="personal" id="per1" pattern="[0-9]{10}" title=""the ten digits number >
+               
+            <br>
+                <span style="font-weight: bold;">Gender</span>
+                <input type="radio" name="QUANTITY" value="M">Male
+                <input type="radio" name="QUANTITY" value="F">Female<br>
+                Date of Birth :
+
+                <input type="date" name="bname">
+     
+                <h3>Distance</h3>
+                <input type="checkbox" name="DISTANCE" value="far">Above 10km<br>
+                <input type="checkbox" name="DISTANCE" value="near">Below 5km<br>
+             <input type="checkbox" name="DISTANCE" value="middle"> 10--5km<br>
+             <label for="address">Address:</label>
+             <textarea name="text" id="" rows="4" cols="20"></textarea><br>
+             Product Of Interest:
+             <select name="items" class="one">
+             <option value="Milk">Milk</option>
+             <option value="cheese">Cheese</option>
+             <option value="eggs">Eggs</option>
+             <option value="butter">Butter</option>
+            </select>
+            <nav>
+                <a href="http://www.google.com/">Google</a> 
+                <a href="https://www.facebook.com/">FaceBook</a> 
+                <a href="https://www.linkedin.com/">LinkedIn</a>
+                 
+                </nav>
+            <br>
+            <button type="submit" class="one1">Register</button>
+            
+    
+            </form>   
+            
+            </div>
+        </center>
+            <footer id="foot">
+                
+                    <p>&copy; 2024 My Incresol. All rights reserved.</p>
+                
+                
+              </footer>
+       
+        </body>
+        </html>" name="number" id="one">
+</body>
+</html>

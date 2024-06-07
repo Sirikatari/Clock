@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>login success</title>
+        <style>
+        body {
+            background: url(product.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 170%;
+        }
+        .mar{
+            margin-top: 200px;
+            margin-left: 350px;
+        }
+        #one{
+            margin:6px;
+            font-family: Arial, Helvetica, sans-serif ;
+        }
+        #two {
+            background-color:azure;
+            color: white;
+            padding: 10px;
+            margin: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color:black ;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        /* .video-background{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            z-index: -1;
+
+        } */
+        #foot{
+display: table;
+margin-top: 200px;
+            margin-left: 350px;
+}
+        </style>
+         <script>
+            // User Validations
+    function loginValidation() {
+                // Ramesh
+      var uname = document.myform.username.value;
+                 //Ramesh@123
+      var password = document.myform.password.value;
+                if(uname==null || uname=="") {
+                  alert("Name cant be blank")
+                  return false;  
+               } else if (password.length<6){
+                  alert("Password Must be 6 letters")
+                  return false;
+               }  
+               return true                 
+            }           
+         </script>
+    </head>
+    <body>
+       
+        <nav id="two">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1><marquee width="100%" direction="right" height="30px">SHREE KRISHNA DAIRY FARM</marquee></h1>
+
+        <div class="mar">
+        <h1 style="font-family: 'Courier New', Courier, monospace;">Login Form</h1>
+         <form name="myform" action="contactus.html" onsubmit="return loginValidation(this)">
+          Username:<input type="text" name="username" id="one" placeholder="user name" autofocus><br>
+          Password:<input type="password" name="password" id="one"placeholder="password"><br>
+            <button type="submit" style="margin: 8px;">Login</button>
+        </form>
+       
+    </div>
+    <footer id="foot">
+            
+        <p>&copy; 2024 My Incresol. All rights reserved.</p>
+    
+    
+  </footer>
+
+    </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(glass.jpg);
+            background-repeat: no-repeat;
+            background-size:100% 150%;
+font-size: large;
+            .one{
+                margin-top: 20px;
+            }
+            
+        }
+        #two {
+            background-color:burlywood;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color:black ;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+        nav ul li a:hover {
+            text-decoration:antiquewhite;
+        }
+        h1{
+            color:azure;
+        }
+        #detail{
+            font-size: medium;
+            font-weight: bold;
+            margin: 6px;
+        }
+        #name,#number,#message,#email{
+            margin: 15px;
+        }
+        @media screen and (min-width: 767px)  {
+                .container {
+                    width: 100%;
+                    padding: 5px 10px;
+                }
+                h1{
+            color:black;
+        }
+                        }
+
+            /* tablets , iPads (portait and landscape )----------  */
+             
+         @media screen and (min-width: 768px) and (max-width: 1024px)  {
+            .container {
+                    width: 750px;
+                    padding: 5px 10px;
+                }
+                h1{
+            color:deeppink;
+        }
+            }
+
+
+          /* Low resolution Desktops and laptops ----------  */
+             
+          @media screen and (min-width: 1024px)  {
+            .container {
+                    width: 980px;
+                    padding: 5px 15px;
+                }
+            }
+            
+           
+    </style>
+</head>
+<body>
+    <nav id="two">
+        <ul>
+            <li><a href="registration.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+    <center>
+    <h1><marquee width="100%" style="color: black;" direction="right" height="30px">SHREE KRISHNA DAIRY FARM</marquee></h1>
+    <form action="success.html">
+        <div class="one">
+        <h1 style="font-family: 'Courier New', Courier, monospace; color:black;">CONTACT US</h1><br>
+        <div id="name"><span id="detail">Full Name:</span><input type="text" placeholder="full name"  autofocus><br></div>
+            <div id="number"><span id="detail">Phone Number:</span><input type="text" placeholder="phone number"><br></div>
+            <div id="email"><span id="detail">Email:</span><input type="text" placeholder="email"><br></div>
+            <div id="Message"><span id="detail"> Message:<br></span></div>
+        <textarea name="text" id="" rows="6" cols="20"></textarea><br>
+        <input type="button" value="send" style="margin: 8px; width: 80px; height: 28px;">
+        
+    </div>
+</form>
+</center>
+</body>
+</html>
